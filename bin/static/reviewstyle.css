@@ -1,0 +1,64 @@
+h1 {
+	font-family: Sans-serif, serif;
+}
+
+html {
+	background-image: radial-gradient(circle at center, red, blue);
+	text-align: center;
+}
+
+section {
+	align-items: center;
+	height: 75vh;
+}
+
+main {
+	background-image: linear-gradient(rgba(127, 127, 255, 0.75), #ff6);
+	background-size: length;
+	background-position: 50% 50%;
+	/* max-width: 5000px; */
+}
+
+p {
+	font-style: oblique;
+	color: black;
+	font-size: 90%;
+	margin: 15px 0;
+	padding: 10px;
+	-webkit-justify-content: space-around;
+	display: flex;
+	justify-content: space-around;
+	padding: 10px;
+}
+
+footer {
+	justify-content: center;
+	padding: 50px;
+	height: 50vh;
+}
+
+header h1 {
+	background-color: #C2E0D1;
+}
+
+img {
+	height: 30vh;
+	width: 20vw;
+	margin: auto;
+	/* width: 60%;*/
+	padding: 10px;
+}
+
+body {
+	color: #F47171;
+	width: 30vw back-ground: center;
+}
+
+body a:hover {
+	color: orange;
+	text-decoration: none;
+}
+
+body a:visited {
+	color: hotpink;
+}

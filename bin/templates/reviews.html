@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<title>Make-up Reviews</title>
+<link rel = "stylesheet"  type="text/css" href="reviewstyle.css"> 
+</link>
+
+</head>
+
+<body>
+	<header>
+		<h1>Make-up Reviews</h1>
+	</header>
+	
+	<section th:each="review: ${reviews}">
+		<h2>
+			<a th:href="@{/review(id=${review.getId()})}" th:text="${review.getReviewCategory()}"></a>
+		</h2>
+	</section>
+
+
+</body>
+</html>
