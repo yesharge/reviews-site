@@ -3,9 +3,10 @@
 <html xmlns:th="http://www.thymeleaf.org">
 
 <head>
-<title>Make-up Reviews</title>
-<link rel = "stylesheet"  type="text/css" href="reviewstyle.css"> 
+<title>Make-up Brand Reviews</title>
+<link rel="stylesheet" type="text/css" href="reviewstyle.css">
 </link>
+
 
 </head>
 
@@ -13,10 +14,11 @@
 	<header>
 		<h1>Make-up Reviews</h1>
 	</header>
-	
-	<section th:each="review: ${reviews}">
+
+	<section class="titlepage" th:each="review: ${reviews}">
 		<h2>
-			<a th:href="@{/review(id=${review.getId()})}" th:text="${review.getReviewCategory()}"></a>
+			<a th:href="@{/review(id=${review.getId()})}"
+				th:text="${review.getReviewCategory()}"></a>
 		</h2>
 	</section>
 

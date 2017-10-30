@@ -1,22 +1,27 @@
 h1 {
 	font-family: Sans-serif, serif;
+	color: hotpink;
 }
 
 html {
-	background-image: radial-gradient(circle at center, red, blue);
+	background-color: rgba(255, 99, 71, 0.5);
+}
+
+.titlepage {
+	background-image:
+		url("https://img.buzzfeed.com/buzzfeed-static/static/2014-12/3/4/enhanced/webdr06/anigif_enhanced-418-1417598434-21.gif");
+	background-attachment: local;
+}
+
+.container {
+	align-items: center;
+	height: 75vh;
 	text-align: center;
 }
 
 section {
-	align-items: center;
-	height: 75vh;
-}
-
-main {
-	background-image: linear-gradient(rgba(127, 127, 255, 0.75), #ff6);
-	background-size: length;
-	background-position: 50% 50%;
-	/* max-width: 5000px; */
+	height: 35vh;
+	text-align: center;
 }
 
 p {
@@ -32,33 +37,41 @@ p {
 }
 
 footer {
-	justify-content: center;
-	padding: 50px;
-	height: 50vh;
+	position: fixed;
+	padding: 10px;
+	font-size: 200%;
+}
+
+header {
+	text-align: center;
 }
 
 header h1 {
-	background-color: #C2E0D1;
+	background-color: hsl(0, 100%, 90%);
 }
 
 img {
 	height: 30vh;
 	width: 20vw;
 	margin: auto;
-	/* width: 60%;*/
-	padding: 10px;
-}
-
-body {
-	color: #F47171;
-	width: 30vw back-ground: center;
-}
-
-body a:hover {
-	color: orange;
-	text-decoration: none;
 }
 
 body a:visited {
 	color: hotpink;
+}
+
+.rating {
+	unicode-bidi: bidi-override;
+	direction: rtl;
+}
+
+.rating>span {
+	display: inline-block;
+	position: relative;
+	width: 1.1em;
+}
+
+.rating>span:hover:before, .rating>span:hover ~ span:before {
+	content: "\2605";
+	position: absolute;
 }

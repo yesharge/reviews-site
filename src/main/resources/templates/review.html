@@ -13,27 +13,21 @@
 
 	<header>
 		<h1>Make-up Review</h1>
-		
 	</header>
-<main>
-	<section th:each="review: ${reviews}">
-		<h2 th:text="'Title: '+${review.getTitle()}"></h2>
-		<p th:text="${review.getContent()}"></p>
-		<img th:src="${review.getImageUrl()}"></img>
-		<h2 th:text="'Title: '+${review.getTitle()}"></h2>
-		<p th:text="${review.getContent()}"></p>
-		<img th:src="${review.getImageUrl()}"></img>
-		<h2 th:text="'Title: '+${review.getTitle()}"></h2>
-		<p th:text="${review.getContent()}"></p>
-		<img th:src="${review.getImageUrl()}"></img>
-		
 
-		<h3></h3>
+	<section class="container" th:each="review: ${reviews}">
+		<h2 th:text="${review.getTitle()}"></h2>
+		<p th:text="${review.getContent()}"></p>
+		<img th:src="${review.getImageUrl()}"></img>
+		<p>Was this review helpful?</p>
+		<div class="rating">
+			<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+		</div>
 	</section>
-	</main>
-	<footer>
-			<a href="http://localhost:8080/reviews">Back to home</a>
-		</footer>
-
 </body>
+<footer>
+	<h5>
+		<a href="http://localhost:8080/reviews">Back to home</a>
+	</h5>
+</footer>
 </html>
